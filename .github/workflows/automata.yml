@@ -1,0 +1,30 @@
+name: Araña Buscadora Automática
+
+on:
+  schedule:
+    # Se ejecuta a las 02:00 UTC, que son las 04:00 AM hora de la península (CEST)
+    - cron: '0 2 * * *' 
+  workflow_dispatch: # Añade el "Botón Rojo" para poder ejecutarlo a mano desde el móvil
+
+jobs:
+  cazar_nichos:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el código
+        uses: actions/checkout@v4
+      
+      - name: Instalar Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          
+      - name: Instalar librerías
+        run: |
+          pip install -r requirements.txt
+          
+      - name: Ejecutar la Araña
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: python spider_canales.py
