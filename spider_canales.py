@@ -22,23 +22,55 @@ supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 # Coste de búsqueda: 40 keywords x 100 puntos = 4.000 puntos de cuota.
 # ==========================================
 KEYWORDS_SEMILLA = [
-    # Animación, Historia y Geopolítica
-    "animación 3d historia militar", "documental geopolítica animado", "explicaciones pizarra historia", "animación 2d ingeniería",
-    # Terror, Crimen y Misterio
-    "historias crímenes reales animación", "horror análogo lore", "casos sin resolver documental", "historias de venganza narradas",
-    # Historias para dormir y Relajación
-    "historias para dormir lluvia", "cuentos narrativa IA", "relatos mitología para dormir", "documental espacio relajante",
-    # Finanzas, Emprendimiento y Tech
-    "documental finanzas personales", "programación javascript tutorial", "tecnología IA explicada", "bienes raíces lujo tour",
-    # Filosofía, Psicología y Desarrollo Personal
-    "estoicismo disciplina", "psicología humana explicada", "desarrollo personal pizarra", "motivación disciplina éxito",
-    # Entretenimiento, Pop Culture y Curiosidades
-    "curiosidades películas animación", "cotilleo celebridades drama", "tier list humor", "animación historias de vida",
-    # Deportes, Fitness y Motor
-    "documental atletas históricos", "fitness calistenia animación", "restauración autos clásicos", "física aerodinámica coches",
-    # Nichos de Alto CTR "Bizarros"
-    "qué pasaría si escenarios", "simulaciones física 3d", "leyendas urbanas animación", "experimentos supervivencia extremos",
-    "animales prehistóricos documental", "mega construcciones ingeniería", "ajedrez estrategia agresiva", "cuentos infantiles morales"
+    # 🇪🇸 NICHOS EN ESPAÑOL (49 palabras)
+    "fondos soberanos inversión", "guerra de los chips", "startups que quebraron", 
+    "tierras raras negocio", "aerolíneas que quebraron", "ciudades fantasma china", 
+    "negocio transporte marítimo", "fondos de capital privado explicado", 
+    "negocio de las farmacéuticas", "negocio centros de datos ia", 
+    "crear agentes ia sin código", "power bi finanzas tutorial", 
+    "cold email herramientas", "crear saas sin código", "automatizar videos con ia", 
+    "modelo financiero excel tutorial", "automatizar ecommerce make", 
+    "servidor casero autohospedaje", "ia para contratos legales", 
+    "chatbot con tus documentos", "protocolos de longevidad", 
+    "placas solares rentabilidad", "invertir bienes raíces comerciales", 
+    "crear empresa en el extranjero", "invertir en relojes de lujo", 
+    "impuestos criptomonedas estrategia", "terapia de testosterona", 
+    "negocio cargadores coche eléctrico", "dropshipping alto ticket", 
+    "compra de clínicas dentales", "ciberseguridad para pymes", 
+    "subvenciones para empresas", "energía nuclear futuro", 
+    "invertir en franquicias rentabilidad", "clonar voz con ia", "invertir en arte", 
+    "automatización cadena de suministro", "gestión financiera para empresas", 
+    "fraudes de seguros casos", "monetizar una api", "negocio del agua escasez", 
+    "configurar crm para ventas", "cartera de dividendos crecientes", 
+    "empresas de robótica futuro", "negocio de logística transporte", 
+    "ia para agentes inmobiliarios", "espionaje industrial casos", 
+    "accesibilidad web normativa", "invertir en hoteles boutique",
+
+    # 🇺🇸 NICHOS EN INGLÉS (49 palabras)
+    "sovereign wealth fund explained", "semiconductor war explained", 
+    "startup failure case study", "rare earth minerals explained", 
+    "airline bankruptcy explained", "china ghost cities explained", 
+    "shipping industry explained", "private equity explained documentary", 
+    "pharmaceutical industry explained", "data center boom explained", 
+    "build ai agents no code", "power bi finance dashboard", 
+    "cold email setup tutorial", "build saas no code", "ai video automation workflow", 
+    "financial modeling tutorial excel", "make automation ecommerce", 
+    "self hosting homelab tutorial", "ai legal document drafting", 
+    "build rag chatbot tutorial", "longevity peptides explained", 
+    "solar battery roi analysis", "real estate syndication explained", 
+    "offshore company structure explained", "luxury watch investment", 
+    "crypto tax strategy explained", "trt hormone optimization", 
+    "ev charging business explained", "high ticket dropshipping", 
+    "dental practice private equity", "cybersecurity for small business", 
+    "government grants for business", "nuclear energy comeback explained", 
+    "franchise business roi explained", "ai voice cloning tutorial", 
+    "art investment explained", "supply chain automation case study", 
+    "cash flow management business", "insurance fraud case study", 
+    "monetize your api tutorial", "water scarcity economics explained", 
+    "crm setup for agencies", "dividend growth investing strategy", 
+    "robotics startups explained", "freight brokerage business explained", 
+    "ai tools for realtors", "corporate espionage case study", 
+    "web accessibility compliance tutorial", "boutique hotel investment"
 ]
 
 # Límites para encontrar el "Factor MRV" (Ni gigantes inalcanzables, ni canales muertos)
